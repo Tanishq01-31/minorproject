@@ -5,7 +5,7 @@
 #navbar{
     display: flex;
     align-items: center;
-    position: relative;
+    position: absolute;
     z-index: 2;
     top: 0px;
     position: sticky;
@@ -18,11 +18,12 @@
     padding: 0px 0px;
     font-size: 1.3rem ;
     list-style: none;
+    font-family: 'Bree Serif', serif;
 }
 #navbar::before{
     content: "";
     position: absolute;
-    background-color:rgb(30, 139, 202);
+    background-color:rgb(50, 13, 138);
     width: 100%;
     height: 100%;
     top: 0px;
@@ -39,8 +40,8 @@
     border-radius: 10px;
 }
 #navbar ul li a:hover{
-    color: black;
-    background-color: grey;
+    color: rgb(50, 13, 138);
+    background-color: rgb(240, 232, 232);
     opacity: 0.7;
     text-decoration: underline;
 
@@ -66,16 +67,28 @@
     margin: 31px 89px;
     padding: 0px 0px;
 }
+/* .container::before{
+    content: "";
+    position: absolute;
+    background: url('../homeback.jpg') no-repeat center center/cover;
+    /* background-color: cadetblue;*/
+   /* height: 100%;
+    width: 100%;
+    z-index: -1;
+} */
 .cars{
-    border: 7px solid rgb(173, 23, 48);
+    border: 4px solid rgb(187, 16, 221);
     border-radius: 10px;
     margin: 0px 0px;
     padding: 0px 0px;
+    box-shadow: 10px;
 }
 .cars img{
     height: 200px;
     width: 100%;
     position: relative;
+    border-radius: 3px;
+    /* border: 1px solid rgb(193, 10, 199); */
     /* display: block; */
 }
 #car1{grid-area: car1;}
@@ -95,6 +108,7 @@
     margin: 7px 8px;
     padding: 0px 0px;
     font-size: 1.2rem;
+    font-family: 'Bree Serif', serif;
 }
 
 .info{
@@ -105,8 +119,9 @@
     margin: 0px 0px;
     padding: 6px 152.5px;
     cursor: pointer;
-    background-color: rgb(30, 139, 202) ;
+    background-color: rgb(50, 13, 138);
     font-size: 1.2rem;
+    font-family: 'Bree Serif', serif;
     border-radius: 4px;
     /* display: block; */
     position: relative;
@@ -126,6 +141,7 @@
 #signin::before{
     content: "";
     position: absolute;
+    background: url('../background.jpg') no-repeat center center/cover;
     /* background-color: cadetblue; */
     height: 100%;
     width: 100%;
@@ -138,12 +154,13 @@
     /* margin: 20px; */
     border-radius: 9px;
     font-size: 1.1rem;
+    font-family: 'Bree Serif', serif;
 }
 #signin-box{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 4px solid rgb(173, 23, 48);
+    border: 4px solid rgb(27, 5, 9);
     margin: 0px 200px;
     padding: 0px 0px;
     border-radius: 25px;
@@ -158,6 +175,7 @@
     align-items: center;
     justify-content: center;
     font-size: 3.8rem;
+    font-family: 'Bree Serif', serif;
     padding-top: 50px;
     /* padding: 0px 0px; */
     margin: 0px 0px;
@@ -170,16 +188,105 @@
     margin: 21px 0px;
     padding: 0px 0px;
 }
+.form-group label{
+    font-size: 1.5em; ;
+    font-family: 'Bree Serif', serif;
+}
 .btn2{
     margin: 30px 0px;
     padding: 14px 24px;
     border-radius: 10px;
     font-size: 1rem;
-    background-color: rgb(30, 139, 202) ;
+    font-family: 'Bree Serif', serif;
+    background-color: rgb(50, 13, 138) ;
     color: white;
+    cursor: pointer;
 }
 #btn{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+/* *************************RENT PAGE**************************************** */
+
+#booking{
+
+    position: relative;
+    width: 100%;
+    /* height: 100%; */
+    top: 100%;
+    
+}
+#rent-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red;  */
+}
+#rent-box input{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+    margin-left: 0px;
+    padding: 0px 0px;
+}
+#rent-box label{
+    font-size: 2.2rem;
+    font-family: 'Bree Serif', serif;
+}
+#rent-box .rent-form{
+    margin: 54px 0px;
+    padding: 0px 0px;
+}
+#rent-box .rent-form .label{
+    /* margin-left: -50px; */
+    padding: 0px 0px;
+    margin-right: 21px;
+}
+ #loc{
+    width: 60%;
+    border-radius: 10px;
+
+}
+.rent-form #terms{
+    margin-left: 0px;
+    padding: 0px 0px;
+}
+.rent-form #chkbx{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+#rent-box #submit{
+    margin:0px 0px ;
+    padding: 15px 36px;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+    cursor: pointer;
+    background-color: rgb(50, 13, 138);
+    color: white;
+}
+#rent-box #submit:disabled{
+    opacity: 0.5;
+}
+#rent-box #check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bgimg::before{
+    content: "";
+    position: absolute;
+    background: url('../background.jpg') no-repeat center center/cover;
+    /* background-color: cadetblue;*/
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.bgimg{ 
+    /* position: relative; */
+}
+/* #submitbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
